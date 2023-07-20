@@ -1,0 +1,9 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+
+page {
+  fluidtemplate {
+    layoutRootPath = EXT:todo/Resources/Private/Layouts/Page/
+    partialRootPath = EXT:todo/Resources/Private/Partials/Page/
+    templateRootPath = EXT:todo/Resources/Private/Templates/Page/
+  }
+}

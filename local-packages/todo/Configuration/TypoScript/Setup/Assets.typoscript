@@ -1,0 +1,9 @@
+page {
+  includeCSS {
+    website = EXT:todo/Resources/Public/Css/website.css
+  }
+
+  includeJSFooter {
+    website = EXT:todo/Resources/Public/JavaScript/website.js
+  }
+}
