@@ -11,7 +11,7 @@ In der gesamten Anwendung hat der Nutzer die Möglichkeit, neue Aufgaben zu erst
 - Fälligkeitsdatum
 
 Bei der Eigenschaft 'Titel' handelt es sich um ein Pflichtfeld. Beschreibung und Fälligkeitsdatum sind optional. Bald ablaufende und abgelaufene Aufgaben sollen speziell gekennzeichnet werden.
-Des Weiteren hat der Nutzer die Möglichkeit, Aufgaben zu bearbeiten, abzuschließen oder zu löschen. Es ist ausreichend ein Template für die Struktur zu erstellen. Eine Persistierung der Daten ist nicht notwendig.  Die Anwendung soll intuitiv und nutzerfreundlich sein.
+Des Weiteren hat der Nutzer die Möglichkeit, Aufgaben zu bearbeiten, abzuschließen oder zu löschen. Es ist ausreichend ein Template für die Struktur zu erstellen. Eine Persistierung der Daten ist nicht notwendig. Die Anwendung soll intuitiv und nutzerfreundlich sein.
 Nutze moderne technische Ansätze, verwende entsprechende Frameworks oder vorzugsweise eine eigene Gestaltung, um eine übersichtliche und wiederzuerkennende Anwendung zu schaffen. Es gibt für das Erscheinungsbild und die Handhabung keine Vorgaben.
 
 Die Applikation sollte mit den gängigsten Browsern genutzt werden können.

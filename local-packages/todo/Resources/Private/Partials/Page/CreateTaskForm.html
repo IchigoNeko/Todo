@@ -1,0 +1,25 @@
+<form class="container-sm col-7 mx-auto" action="submit.php" method="post">
+
+    <!-- Title Field -->
+    <div class="form-group">
+        <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
+        <div class="invalid-feedback">
+            Please enter a title.
+        </div>
+    </div>
+
+    <!-- Description Field -->
+    <div class="form-group">
+        <textarea class="form-control" id="description" name="description" placeholder="Beschreibung" rows="3"></textarea>
+    </div>
+
+    <!-- Date Field -->
+    <div class="form-group">
+        <input type="date" class="form-control" id="date" placeholder="Datum" name="date">
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary submit_button">Hinzufügen</button>
+    </div>
+</form>

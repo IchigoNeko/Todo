@@ -1,0 +1,132 @@
+/*** Variables ***/
+:root {
+    --background: #F7EDE2;
+    --background-dark: #b9ad97;
+    --green: #84A59D;
+    --green-dark: #4D6761FF;
+    --background-2:#F5CAC3;
+    --late:#F28482;
+    --urgent:#F6BD60;
+}
+
+#main-title{
+    text-align: center;
+    margin-top: 5%;
+    color:var(--green-dark);
+}
+
+/*** Form ***/
+.createForm{
+    background-color: var(--background-2);
+    margin-top:2%;
+    padding: 2%;
+    border-radius: 8px;
+    border-color: var( --background-dark);
+}
+
+.form-group{
+    margin:2%;
+}
+textarea.form-control:focus,input.form-control:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 5px rgb(77, 103, 97);
+}
+
+button.submit_button{
+    background-color: var(--green);
+    border-color: var(--green-dark);
+}
+button.submit_button:hover{
+    background-color: var(--green-dark);
+    border-color: var(--green-dark);
+}
+
+.hr{
+    width:50vw;
+    border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    margin-left:25%;
+    margin-top:3%;
+}
+
+/*** Tasks ***/
+.scroll-task-container{
+    overflow-y: auto;
+    margin-bottom: 2%;
+}
+
+.task-info{
+    background-color: var(--background);
+    margin-top:2%;
+    border-radius: 8px;
+}
+
+.title{
+    padding-top: 2%;
+    font-weight: 700;
+}
+
+.desc{
+    font-size: 10pt;
+    color: #5c636a;
+}
+
+.date{
+    padding-bottom: 2%;
+    font-size: 10pt;
+    color: #5c636a;
+}
+
+.urgent{
+    background-color: var(--urgent);
+}
+
+.late{
+    background-color: var(--late);
+}
+
+.icon{
+    width: 20px;
+}
+.icon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.deleteButton:hover{
+    background-color: var(--late);
+    border-radius: 0 8px 8px 0;
+}
+
+.editButton:hover{
+    background-color: var(--urgent);
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.checkbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-check-input{
+    text-align: center;
+    transform: scale(2);
+}
+input[type="checkbox"]{
+    border-color: var(--green);
+}
+
+input[type="checkbox"]:checked {
+    border-color: var(--late);
+    background-color: var(--late);
+}
+input[type="checkbox"]:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 87, 51, 0.25);
+    border-color: var(--urgent);
+}
