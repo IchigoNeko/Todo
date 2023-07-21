@@ -1,9 +1,11 @@
 page {
   includeCSS {
     website = EXT:todo/Resources/Public/Css/website.css
+    bootstrap = EXT:todo/Resources/Public/Css/bootstrap.min.css
   }
 
   includeJSFooter {
     website = EXT:todo/Resources/Public/JavaScript/website.js
+    bootstrap = EXT:todo/Resources/Public/JavaScript/bootstrap.min.js
   }
 }
