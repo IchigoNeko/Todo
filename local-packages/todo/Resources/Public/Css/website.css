@@ -2,11 +2,12 @@
 :root {
     --background: #F7EDE2;
     --background-dark: #b9ad97;
-    --green: #84A59D;
+    --green: #84a59d;
     --green-dark: #4D6761FF;
     --background-2:#F5CAC3;
     --late:#F28482;
-    --urgent:#F6BD60;
+    --urgent: rgba(246, 189, 96, 0.56);
+    --disabled: #8f8d8d;
 }
 
 #main-title{
@@ -51,7 +52,7 @@ button.submit_button:hover{
 }
 
 /*** Tasks ***/
-.scroll-task-container{
+.tasks-container{
     overflow-y: auto;
     margin-bottom: 2%;
 }
@@ -83,7 +84,11 @@ button.submit_button:hover{
 }
 
 .late{
-    background-color: var(--late);
+    background-color: var(--background-2);
+}
+.disabled{
+    background-color: var(--disabled);
+    text-decoration: line-through;
 }
 
 .icon{
@@ -100,7 +105,7 @@ button.submit_button:hover{
 }
 
 .editButton:hover{
-    background-color: var(--urgent);
+    background-color: var(--green);
 }
 
 .icon-container{
