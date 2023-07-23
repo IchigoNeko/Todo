@@ -7,7 +7,7 @@
     --background-2:#F5CAC3;
     --late:#F28482;
     --urgent: rgba(246, 189, 96, 0.56);
-    --disabled: #8f8d8d;
+    --disabled: rgba(164, 164, 164, 0.55);
 }
 
 #main-title{
