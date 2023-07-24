@@ -2,11 +2,12 @@
 :root {
     --background: #F7EDE2;
     --background-dark: #b9ad97;
-    --green: #84A59D;
+    --green: #84a59d;
     --green-dark: #4D6761FF;
     --background-2:#F5CAC3;
     --late:#F28482;
-    --urgent:#F6BD60;
+    --urgent: rgba(246, 189, 96, 0.56);
+    --disabled: rgba(164, 164, 164, 0.55);
 }
 
 #main-title{
@@ -41,6 +42,11 @@ button.submit_button:hover{
     border-color: var(--green-dark);
 }
 
+button.submit_button:active{
+    background-color: var(--green) !important;
+    border-color: var(--green-dark) !important;
+}
+
 .hr{
     width:50vw;
     border: 0;
@@ -51,7 +57,7 @@ button.submit_button:hover{
 }
 
 /*** Tasks ***/
-.scroll-task-container{
+.tasks-container{
     overflow-y: auto;
     margin-bottom: 2%;
 }
@@ -69,6 +75,7 @@ button.submit_button:hover{
 
 .desc{
     font-size: 10pt;
+    font-style: italic;
     color: #5c636a;
 }
 
@@ -83,7 +90,11 @@ button.submit_button:hover{
 }
 
 .late{
-    background-color: var(--late);
+    background-color: var(--background-2);
+}
+.disabled{
+    background-color: var(--disabled);
+    text-decoration: line-through;
 }
 
 .icon{
@@ -100,7 +111,7 @@ button.submit_button:hover{
 }
 
 .editButton:hover{
-    background-color: var(--urgent);
+    background-color: var(--green);
 }
 
 .icon-container{
@@ -129,4 +140,32 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 87, 51, 0.25);
     border-color: var(--urgent);
+}
+
+[contenteditable="true"]{
+    border:1px solid var(--disabled);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin:2%;
+    padding:3px;
+}
+
+[contenteditable="true"]:focus {
+    border:1px solid var(--green) !important;
+    box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#errorMessage, #titleErrorMessage{
+    color: #651117;
+    display: none;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+input[type="date"].date{
+    border:1px solid var(--disabled);
+    border-radius: 5px;
+    margin:2%;
+    padding:3px;
 }

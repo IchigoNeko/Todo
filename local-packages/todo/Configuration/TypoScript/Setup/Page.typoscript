@@ -12,6 +12,8 @@ page {
 
 	10 = FLUIDTEMPLATE
  	10 {
+		file = EXT:todo/Resources/Private/Templates/Page/Default.html
+
    		templateName = TEXT
    		templateName {
 	 		cObject = TEXT
